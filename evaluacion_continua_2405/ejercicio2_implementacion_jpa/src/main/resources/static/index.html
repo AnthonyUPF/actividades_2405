@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos y Clientes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Gestión de Productos y Clientes</h1>
+
+    <!-- Formulario para agregar o editar clientes -->
+    <h2>Clientes</h2>
+    <form id="clienteForm">
+        <input type="text" id="nombreCliente" placeholder="Nombre del Cliente" required>
+        <input type="email" id="correoCliente" placeholder="Correo del Cliente" required>
+        <button type="submit">Agregar Cliente</button>
+    </form>
+
+    <!-- Contenedor para mensajes de clientes -->
+    <div id="mensajeCliente" class="message"></div>
+
+    <!-- Listado de clientes -->
+    <div id="clientes"></div>
+
+    <!-- Formulario para agregar o editar productos -->
+    <h2>Productos</h2>
+    <form id="productoForm">
+        <input type="text" id="nombreProducto" placeholder="Nombre del Producto" required>
+        <input type="number" id="precioProducto" placeholder="Precio del Producto" required>
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+    <!-- Contenedor para mensajes de productos -->
+    <div id="mensajeProducto" class="message"></div>
+
+    <!-- Listado de productos -->
+    <div id="productos"></div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
